@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+    .container{
+      background-color: #3dbfb6;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-start{
+      border: 1px solid #e5e5e5;
+      border-bottom: 0;
+      background-image: linear-gradient(yellow, #ff3d30);
+      padding: 10px;
+      width: 120px;
+      height: 48px;
+      font-family:'M PLUS Rounded 1c', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      box-shadow: 0px 5px 1px #b32f26,
+      2px 3px 1px #fff inset;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      transition: all .1s;
+    }
+
+    .button-start::after{
+      content: '';
+      position: absolute;
+      z-index: 99;
+      width: 50px;
+      height: 10px;
+      background-color: rgba(244,244,244,0.9);
+      border-radius: 5px;
+      margin-top: -7px;
+      margin-left: -20px;
+    }
+
+    .button-start:active{
+      background-image: linear-gradient(#ffd100, #f09b00);
+      box-shadow: 0px 0px 1px blue,
+      2px 3px 1px rgba(244,244,244,0.1) inset;
+      margin-top: 6px;
+    }
+
+    .mario{
+      position: absolute;
+      margin-top: -2px;
+      z-index: 0;
+      background-image: url("../assets/mario.png");
+      background-size: cover;
+      background-position: top;
+      width: 100px;
+      height: 55px;
+      transition: all .3s;
+    }
